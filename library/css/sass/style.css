@@ -1,0 +1,198 @@
+/*!
+Theme Name: Arcade Basic
+Theme URI: https://themes.bavotasan.com/2014/arcade/
+Author: c.bavota
+Author URI: http://bavotasan.com/
+Description: Create a truly unique design with Arcade, a lightweight and fully responsive HTML5 theme. Use the theme customizer to add your own header image, page layout, site width and more. Distinguish each post with one of the eight supported post formats, such as: Video, Image, Aside, Status, Audio, Quote, Link and Gallery. Install JetPack to display each of your galleries through a tiled view and jQuery carousel. Compatible with bbPress & BuddyPress. Built using SASS, Compass and Bootstrap 3. Uses Google Fonts for improved typeface readability and works perfectly in desktop browsers, tablets and handheld devices. For a live demo go to http://demos.bavotasan.com/arcade/.
+Version: 1.0.3
+Text Domain: arcade
+Domain Path: /library/languages/
+Tags: black, blue, gray, silver, white, light, one-column, two-columns, left-sidebar, right-sidebar, fluid-layout, responsive-layout, buddypress, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-image-header, featured-images, flexible-header, microformats, post-formats, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready
+
+License: GNU General Public License v3.0
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
+
+Arcade WordPress Theme, Copyright 2014 c.bavota
+Arcade is distributed under the terms of the GNU GPL
+*/
+.pull-right {
+  display: none; }
+
+body {
+  margin: 0;
+  padding: 0; }
+
+.post-img {
+  width: 100%;
+  height: 218px;
+  background-size: 100% !important; }
+
+.huge .post-img {
+  height: 436px;
+  background-size: 230% !important; }
+
+.post-holder a {
+  background-color: transparent !important;
+  color: white !important;
+  margin: 30px;
+  position: absolute;
+  z-index: 99; }
+.post-holder .post-img {
+  z-index: 1; }
+  .post-holder .post-img:hover {
+    opacity: .3; }
+
+img.header-img {
+  -webkit-filter: blur(5px) brightness(0.5);
+  -moz-filter: blur(5px) brightness(0.5);
+  -o-filter: blur(5px) brightness(0.5);
+  -ms-filter: blur(5px) brightness(0.5); }
+
+.only-on-home.basic #site-title a {
+  font-size: 30px !important; }
+  @media only screen and (min-width: 786px) {
+    .only-on-home.basic #site-title a {
+      font-size: 80px !important; } }
+
+.element-item {
+  height: 233px;
+  overflow: hidden; }
+
+.full-width .site-content .has-post-thumbnail .entry-header, .full-width.singular .site-content .hentry.has-post-thumbnail {
+  margin-top: -48px;
+  padding: 0 65px; }
+
+#secondary {
+  background-color: rgba(0, 0, 0, 0.8) !important; }
+
+/* filters */
+.container {
+  max-width: 100% !important;
+  width: 100% !important;
+  margin: 0 auto; }
+
+.filter-box {
+  background-color: salmon; }
+  .filter-box .btn-default {
+    color: #333333;
+    background-color: salmon;
+    border-color: black; }
+  .filter-box h2 {
+    color: white;
+    font-size: 8em;
+    text-align: center; }
+
+#posts-filter {
+  width: 273px;
+  margin: 0  auto; }
+
+/* isotope items */
+#isotope {
+  background-color: seagreen; }
+
+.item {
+  background: black;
+  height: 218px;
+  padding: 0 !important;
+  margin: 0 !important;
+  float: left;
+  z-index: 2; }
+  .item img {
+    width: 100%; }
+
+.item.w2 {
+  width: 50%; }
+
+.isotopeX {
+  z-index: 1; }
+
+.huge img {
+  width: 900px; }
+
+.size-large {
+  float: left; }
+
+.basic .entry-title {
+  font-size: 52px !important;
+  margin: 30px 0; }
+
+body.single-post .wp-caption {
+  background: none;
+  border: 0px solid #e6e6e6;
+  max-width: 100%;
+  padding: 0px;
+  text-align: center; }
+  body.single-post .wp-caption .wp-caption-text {
+    display: none; }
+body.single-post .container {
+  max-width: 100% !important;
+  width: 100% !important;
+  margin: 0 auto; }
+  @media only screen and (min-width: 786px) {
+    body.single-post .container {
+      margin: 0 30px; } }
+body.single-post #mainpopup {
+  cursor: url(../library/images/minus.png), auto; }
+  body.single-post #mainpopup img {
+    width: 100%; }
+body.single-post .comment-form-email, body.single-post .comment-form-author, body.single-post .comment-form-url {
+  float: left;
+  margin: 10px 20px 30px 0; }
+body.single-post .image-anchor {
+  width: 500px;
+  float: left;
+  margin: 0 0px 0 0;
+  position: relative; }
+body.single-post .comment-form-comment {
+  float: none;
+  clear: both; }
+body.single-post .title-card-wrapper {
+  overflow: hidden;
+  display: none; }
+body.single-post .comments-area {
+  margin: 0 !important;
+  max-width: 100%;
+  padding: 0 10px; }
+body.single-post .entry-content .gall {
+  position: inherit;
+  left: 0;
+  overflow: hidden;
+  height: 400px;
+  min-height: 285px; }
+  body.single-post .entry-content .gall img {
+    cursor: url(../library/images/slide.png), auto; }
+body.single-post .entry-content .template {
+  position: absolute;
+  opacity: 0;
+  top: 110px;
+  width: 100px;
+  height: 50px;
+  text-align: center;
+  font-size: 22px;
+  letter-spacing: 1px;
+  display: inline;
+  font-style: italic;
+  z-index: 99;
+  color: black;
+  font-family: Raleway, sans-serif; }
+body.single-post .entry-content .enlargeBtn {
+  display: inline-block;
+  background: url("../library/images/mag.png") no-repeat;
+  background-size: 50px 50px;
+  width: 50px;
+  height: 50px;
+  margin: -10px 10px 0; }
+body.single-post .entry-content .image-anchor {
+  width: 270px !important; }
+  @media only screen and (min-width: 786px) {
+    body.single-post .entry-content .image-anchor {
+      width: 420px !important; } }
+  body.single-post .entry-content .image-anchor img {
+    position: static;
+    width: auto;
+    height: auto; }
+
+.metal {
+  width: 100px;
+  float: left;
+  background-color: yellow; }

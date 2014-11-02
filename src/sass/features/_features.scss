@@ -1,0 +1,18 @@
+/* map */
+#map{
+
+
+
+}
+/* sidebar */
+.site:before {
+  background-color: rgba(0,0,0,0.8);
+  content: "";
+  display: none;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 182px;
+  z-index: 3 !important;
+}
