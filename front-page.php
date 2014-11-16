@@ -132,13 +132,13 @@ if ( 2 > $paged ) {
 		</div>
 	</div>
 
-	<div id="isotope" my-main-directive >
+	<div id="isotope"  >
 
-	    <div  my-repeat-directive ng-repeat="post in posts" ng-class='{huge:$first}' class="{{post.tags[0].title}} id-{{post.$$hashKey}} {{post.title_plain}} item element-item col-xs-12 col-sm-6 col-md-6 col-lg-4 seen flip-container" ontouchstart="this.classList.toggle('click');">
+	    <div  on-finish-render ng-repeat="post in posts" ng-class='{huge:$first}' class="col-md-{{getRandomSpan()}} {{post.tags[0].title}} id-{{post.$$hashKey}} {{post.title_plain}} item element-item seen flip-container" ontouchstart="this.classList.toggle('click');">
           <div class=" inner flipper" ng-mouseover="postHover()">
               <!-- <h3>{{post.title_plain}}</h3> -->
 
-              <div class="post-holder col-md-6 front" href="{{post.url}}" >
+              <div class="post-holder  front" href="{{post.url}}" >
                <a href="{{post.url}}" ng-click="blogClicked(post.title_plain, 'id-'+post.$$hashKey)" class="id-{{post.$$hashKey}} btn btn-default btn-lg" >{{post.title_plain}}</a>
                 <div class="post-img" style="background-color: coral">
                     <!--<img src="{{ post.attachments[0].images.full.url }}" height="436"/>-->

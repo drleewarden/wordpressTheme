@@ -71,7 +71,7 @@ img.header-img{
 }
 .element-item {
   height: 233px;
-  width: 350px;
+ // width: 350px;
   overflow: hidden;
 }
 .full-width .site-content .has-post-thumbnail .entry-header,.full-width.singular .site-content .hentry.has-post-thumbnail {
@@ -124,6 +124,7 @@ img.header-img{
   margin: 0 !important;
   float: left;
   z-index: 2;
+
   img{
     width: 100%;
   }
@@ -131,7 +132,12 @@ img.header-img{
 .item.w2 {
   width: 50%;
 }
-
+.item.width2 {
+  width: 200px;
+}
+.item.height2 {
+  height: 200px;
+}
 
 .isotopeX{
   z-index: 1;
@@ -166,7 +172,7 @@ img.header-img{
   transform: rotateY(180deg);
 }
 .flip-container, .front, .back {
-  min-width: 320px;
+  //min-width: 100%;
   min-height: 480px;
 }
 
@@ -174,7 +180,6 @@ img.header-img{
 .flipper {
   transition: 0.6s;
   transform-style: preserve-3d;
-
   position: relative;
 }
 

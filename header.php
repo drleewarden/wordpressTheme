@@ -32,11 +32,13 @@
     loads a script that will have a module ID of 'main'-->
 
 
+
 <script src="<?php echo get_template_directory_uri(); ?>/library/js/vendor/jquery-2.1.0.min.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/library/js/vendor/angular.min.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/library/js/vendor/bootstrap.min.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/library/js/vendor/jquery.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/library/js/vendor/isotope.pkgd.min.js"></script>
+    <script src="http://isotope.metafizzy.co/bower_components/isotope-masonry-horizontal/masonry-horizontal.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/library/js/vendor/jquery.cookie.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/library/js/vendor/modernizr.custom.71147.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/library/js/vendor/jquery.paperfold.js"></script>
@@ -45,6 +47,7 @@
 <script src="<?php echo get_template_directory_uri(); ?>/library/js/services/services.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/library/js/directive/dir-cookie.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/library/js/directive/dir-iso.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/library/js/directive/after-repeat.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/library/js/directive/dir-inputfields.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/library/js/controller.js"></script>
 <!--<script data-main="<?php echo get_template_directory_uri(); ?>/library/js/common.js" src="<?php echo get_template_directory_uri(); ?>/library/js/vendor/require.js"></script>-->

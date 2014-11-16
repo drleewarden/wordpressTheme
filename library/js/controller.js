@@ -99,11 +99,22 @@ americaTrip.controller('mainBodyControl', function ($scope, $http, cookies) {
 
 
   }
+  // ************ Functions after repeater ************* //
+  $scope.$on('ngRepeatFinished', function (ngRepeatFinishedEvent) {
+    console.log('done repeating');
+    var w = $('.element-item').width();
+    //$('.front, .back').width(w);
+    $('.front, .back').each(function (index, item) {
+      console.log(item);
+    });
+  });
+  // ************ Random number generator ************* //
+  $scope.getRandomSpan = function () {
+    return Math.floor((Math.random() * 6) + 1);
+  };
   // ************ HERO slider ************* //
 
   $scope.heroImg = function (post) {
-    var w = $('.element-item').width();
-    $('.front, .back').width(w);
 
     $('.back').click(function () {
       $(this).parents('.flipper').removeClass('flip-r');
@@ -123,11 +134,12 @@ americaTrip.controller('mainBodyControl', function ($scope, $http, cookies) {
     });
   };
   // get data
+
   $scope.mainBodyControl = function () {
 
     $http({
       method: 'GET',
-      url: '/api/get_posts/'
+      url: '?json=get_posts'
     }).
     success(function (data) {
 
@@ -156,8 +168,11 @@ americaTrip.controller('mainBodyControl', function ($scope, $http, cookies) {
 
     $container.isotope({
       // options
+
       itemSelector: '.element-item',
-      layoutMode: 'fitRows'
+      masonry: {
+        columnWidth: 100
+      }
 
     });
 
